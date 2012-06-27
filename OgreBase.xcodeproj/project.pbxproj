@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38D9A390159BB76200CCDA4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D9A38F159BB76200CCDA4B /* Cocoa.framework */; };
+		38D9A39A159BB76200CCDA4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9A398159BB76200CCDA4B /* InfoPlist.strings */; };
+		38D9A39C159BB76200CCDA4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D9A39B159BB76200CCDA4B /* main.m */; };
+		38D9A3A0159BB76200CCDA4B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38D9A39E159BB76200CCDA4B /* Credits.rtf */; };
+		38D9A3A3159BB76200CCDA4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D9A3A2159BB76200CCDA4B /* AppDelegate.m */; };
+		38D9A3A6159BB76300CCDA4B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D9A3A4159BB76300CCDA4B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38D9A38B159BB76200CCDA4B /* OgreBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OgreBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D9A38F159BB76200CCDA4B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		38D9A392159BB76200CCDA4B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		38D9A393159BB76200CCDA4B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		38D9A394159BB76200CCDA4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38D9A397159BB76200CCDA4B /* OgreBase-Info.plist */ = {isa = PBXFileReference; path = "OgreBase-Info.plist"; sourceTree = "<group>"; };
+		38D9A399159BB76200CCDA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38D9A39B159BB76200CCDA4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38D9A39D159BB76200CCDA4B /* OgreBase-Prefix.pch */ = {isa = PBXFileReference; path = "OgreBase-Prefix.pch"; sourceTree = "<group>"; };
+		38D9A39F159BB76200CCDA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		38D9A3A1159BB76200CCDA4B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		38D9A3A2159BB76200CCDA4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38D9A3A5159BB76300CCDA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D9A388159BB76200CCDA4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D9A390159BB76200CCDA4B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38D9A380159BB76200CCDA4B = {
+			isa = PBXGroup;
+			children = (
+				38D9A395159BB76200CCDA4B /* OgreBase */,
+				38D9A38E159BB76200CCDA4B /* Frameworks */,
+				38D9A38C159BB76200CCDA4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38D9A38C159BB76200CCDA4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D9A38B159BB76200CCDA4B /* OgreBase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38D9A38E159BB76200CCDA4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D9A38F159BB76200CCDA4B /* Cocoa.framework */,
+				38D9A391159BB76200CCDA4B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38D9A391159BB76200CCDA4B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D9A392159BB76200CCDA4B /* AppKit.framework */,
+				38D9A393159BB76200CCDA4B /* CoreData.framework */,
+				38D9A394159BB76200CCDA4B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		38D9A395159BB76200CCDA4B /* OgreBase */ = {
+			isa = PBXGroup;
+			children = (
+				38D9A3A1159BB76200CCDA4B /* AppDelegate.h */,
+				38D9A3A2159BB76200CCDA4B /* AppDelegate.m */,
+				38D9A3A4159BB76300CCDA4B /* MainMenu.xib */,
+				38D9A396159BB76200CCDA4B /* Supporting Files */,
+			);
+			path = OgreBase;
+			sourceTree = "<group>";
+		};
+		38D9A396159BB76200CCDA4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D9A397159BB76200CCDA4B /* OgreBase-Info.plist */,
+				38D9A398159BB76200CCDA4B /* InfoPlist.strings */,
+				38D9A39B159BB76200CCDA4B /* main.m */,
+				38D9A39D159BB76200CCDA4B /* OgreBase-Prefix.pch */,
+				38D9A39E159BB76200CCDA4B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38D9A38A159BB76200CCDA4B /* OgreBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D9A3A9159BB76300CCDA4B /* Build configuration list for PBXNativeTarget "OgreBase" */;
+			buildPhases = (
+				38D9A387159BB76200CCDA4B /* Sources */,
+				38D9A388159BB76200CCDA4B /* Frameworks */,
+				38D9A389159BB76200CCDA4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OgreBase;
+			productName = OgreBase;
+			productReference = 38D9A38B159BB76200CCDA4B /* OgreBase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38D9A382159BB76200CCDA4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 38D9A385159BB76200CCDA4B /* Build configuration list for PBXProject "OgreBase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38D9A380159BB76200CCDA4B;
+			productRefGroup = 38D9A38C159BB76200CCDA4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38D9A38A159BB76200CCDA4B /* OgreBase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38D9A389159BB76200CCDA4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D9A39A159BB76200CCDA4B /* InfoPlist.strings in Resources */,
+				38D9A3A0159BB76200CCDA4B /* Credits.rtf in Resources */,
+				38D9A3A6159BB76300CCDA4B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D9A387159BB76200CCDA4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D9A39C159BB76200CCDA4B /* main.m in Sources */,
+				38D9A3A3159BB76200CCDA4B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38D9A398159BB76200CCDA4B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D9A399159BB76200CCDA4B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38D9A39E159BB76200CCDA4B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D9A39F159BB76200CCDA4B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		38D9A3A4159BB76300CCDA4B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D9A3A5159BB76300CCDA4B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38D9A3A7159BB76300CCDA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		38D9A3A8159BB76300CCDA4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		38D9A3AA159BB76300CCDA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OgreBase/OgreBase-Prefix.pch";
+				INFOPLIST_FILE = "OgreBase/OgreBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38D9A3AB159BB76300CCDA4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OgreBase/OgreBase-Prefix.pch";
+				INFOPLIST_FILE = "OgreBase/OgreBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38D9A385159BB76200CCDA4B /* Build configuration list for PBXProject "OgreBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D9A3A7159BB76300CCDA4B /* Debug */,
+				38D9A3A8159BB76300CCDA4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D9A3A9159BB76300CCDA4B /* Build configuration list for PBXNativeTarget "OgreBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D9A3AA159BB76300CCDA4B /* Debug */,
+				38D9A3AB159BB76300CCDA4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38D9A382159BB76200CCDA4B /* Project object */;
+}
