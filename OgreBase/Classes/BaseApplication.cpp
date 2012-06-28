@@ -57,7 +57,7 @@ bool BaseApplication::configure(void)
     {
         // If returned true, user clicked OK so initialise
         // Here we choose to let the system create a default rendering window by passing 'true'
-        mWindow = mRoot->initialise(true, "TutorialApplication Render Window");
+        mWindow = mRoot->initialise(true, "Base Application");
 
         return true;
     }
@@ -79,7 +79,7 @@ void BaseApplication::createCamera(void)
     mCamera = mSceneMgr->createCamera("PlayerCam");
 
     // Position it at 500 in Z direction
-    mCamera->setPosition(Ogre::Vector3(0,0,80));
+    mCamera->setPosition(Ogre::Vector3(0,100,180));
     // Look back along -Z
     mCamera->lookAt(Ogre::Vector3(0,0,-300));
     mCamera->setNearClipDistance(5);

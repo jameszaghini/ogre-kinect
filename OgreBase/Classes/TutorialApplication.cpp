@@ -25,10 +25,58 @@ TutorialApplication::~TutorialApplication(void)
 {
 }
 
+
+bool TutorialApplication::frameStarted(const Ogre::FrameEvent& evt)
+{
+	baseAnim->addTime(evt.timeSinceLastFrame);
+	topAnim->addTime(evt.timeSinceLastFrame);	
+
+    return true;
+}
+
 //-------------------------------------------------------------------------------------
 void TutorialApplication::createScene(void)
 {
-    // create your scene here :)
+    // Set the scene's ambient light
+    mSceneMgr->setAmbientLight(Ogre::ColourValue(0.5f, 0.5f, 0.5f));
+	
+    // Create a Light and set its position
+    Ogre::Light* light = mSceneMgr->createLight("MainLight");
+    light->setPosition(20.0f, 80.0f, 50.0f);
+	
+	
+	Ogre::Plane plane(Ogre::Vector3::UNIT_Y, 0);
+	
+    Ogre::MeshManager::getSingleton().createPlane("ground", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
+												  plane, 1500, 1500, 20, 20, true, 1, 5, 5, Ogre::Vector3::UNIT_Z);
+	
+    Ogre::Entity* entGround = mSceneMgr->createEntity("GroundEntity", "ground");
+    mSceneMgr->getRootSceneNode()->createChildSceneNode()->attachObject(entGround);
+	
+    entGround->setMaterialName("Examples/Rockwall");
+    entGround->setCastShadows(false);
+	
+	mSceneMgr->setSkyDome(true, "Examples/CloudySky", 5, 8);
+	
+	Ogre::Entity* entSinbad = mSceneMgr->createEntity("Ninja", "Sinbad.mesh");
+	
+	entSinbad->setCastShadows(true);
+	entSinbad->getSkeleton()->setBlendMode(Ogre::ANIMBLEND_CUMULATIVE);
+	
+	Ogre::SceneNode* nodeSinbad = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+	nodeSinbad->setPosition(0, 74, 0);
+	nodeSinbad->scale(15,15,15);
+	nodeSinbad->attachObject(entSinbad);
+
+	//Get the two halves of the idle animation.
+	baseAnim = entSinbad->getAnimationState("IdleBase");
+	topAnim = entSinbad->getAnimationState("IdleTop");
+
+	//Enable both of them and set them to loop.
+	baseAnim->setLoop(true);
+	topAnim->setLoop(true);
+	baseAnim->setEnabled(true);
+	topAnim->setEnabled(true);	
 }
 
 
