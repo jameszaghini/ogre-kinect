@@ -27,6 +27,13 @@ public:
 
 protected:
     virtual void createScene(void);
+	void createFrameListener(Ogre::Real deltaTime);
+	bool frameStarted(const Ogre::FrameEvent& evt);
+	
+	
+	Ogre::AnimationState *baseAnim;
+	Ogre::AnimationState *topAnim;
+	
 };
 
 #endif // #ifndef __TutorialApplication_h_
